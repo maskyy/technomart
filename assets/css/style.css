@@ -1,3 +1,5 @@
+body { width: 1200px; }
+
 /* Потолок */
 
 .header {
@@ -6,19 +8,27 @@
     height: 320px;
 }
 
+/* Меню (поиск, закладки, корзина) */
+
 .menu {
     background: var(--another-blue);
-    display: flex;
-    width: 100%;
     height: 42px;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 220px 270px 150px 150px 150px;
+    margin: auto;
+    width: 940px;
 }
 
 .logo-header {
     background: var(--basic-red);
     box-shadow: var(--shadow-down) rgba(0, 0, 0, 0.24);
-    display: flex;
+    display: grid;
     height: 47px;
-    width: 220px;
 }
 
 .text-header {
@@ -26,28 +36,38 @@
 }
 
 .menu-search {
-    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 20px 250px;
 }
 
 .menu-search-icon {
-    margin: auto;
+    margin-left: 15px;
 }
 
+#search {
+    height: 42px;
+    width: 170px;
+}
 .menu-bookmarks, .menu-cart {
     align-self: center;
-    display: flex;
-    width: 110px;
+    display: grid;
+    grid-template-columns: 20px 130px;
 }
 
 .menu-create-order {
-    width: 150px;
+    background: var(--basic-green);
+    display: grid;
+    height: 42px;
 }
+
+/* Инфа под меню */
 
 .top-info {
     display: grid;
     grid-template-areas: "description phone login register"
                          "description address login register";
-    margin: auto;
+    margin: auto auto 40px;
     width: 910px;
 }
 
@@ -60,11 +80,14 @@
 }
 
 .top-info-phone {
+    align-items: center;
     border: 3px solid #fff;
     color: var(--basic-red);
-    display: flex;
+    display: grid;
     grid-area: phone;
+    grid-template-columns: 20px 250px;
     height: 45px;
+    margin: auto;
     width: 270px;
 }
 
@@ -79,6 +102,7 @@
     grid-area: login;
     margin: auto;
 }
+
 .top-info-register {
     background: #fff;
     color: #000;
@@ -98,7 +122,15 @@
 
 .header-sub-menu-item {
     display: block;
-    margin: auto;
+    margin: auto 30px;
+}
+
+.header-sub-menu-item:first-child {
+    margin-left: 50px;
+}
+
+.header-sub-menu-item:last-child {
+    margin-right: 50px;
 }
 
 /* Подвал */
