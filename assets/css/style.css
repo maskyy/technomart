@@ -23,7 +23,6 @@ li {
 .menu {
     background: var(--another-blue);
     margin-bottom: 45px;
-    width: 100%;
 }
 
 /* Логотип */
@@ -248,6 +247,69 @@ li {
     box-shadow: inherit;
 }
 
+/* Основа */
+.main {
+    height: 2531px; /* FIXME */
+}
+
+/* Промо (материалы - доставка) */
+.promo {
+    color: #fff;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 59px;
+}
+
+.promo h3 {
+    margin-left: 23px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+
+.promo div div {
+    margin-left: 24px;
+    margin-bottom: 22px;
+}
+
+.materials,
+.delivery {
+    background: var(--warning)
+                no-repeat
+                url("../images/main-icons/icon-1.svg")
+                bottom 49% right 16%;
+}
+
+.materials::after
+{
+    content: "";
+}
+.instruments {
+    background: var(--special-blue);
+}
+
+.technics {
+    background: var(--special-lilac);
+}
+
+.perforators {
+    background: url("../images/man-bosch.png");
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.discounts {
+    background: var(--special-greenlight);
+}
+
+.transparent-button {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 135px;
+}
+
 /* Подвал */
 .footer {
     background: var(--another-blue-2);
@@ -315,7 +377,7 @@ li {
 
 .footer-bottom {
     justify-content: space-between;
-    padding: 36px 0 27px;
+    padding: 36px 0 32px;
 }
 
 .copyright {
