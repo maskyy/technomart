@@ -6,6 +6,12 @@ li {
     list-style: none;
 }
 
+.container {
+    display: flex;
+    margin: auto;
+    width: 940px;
+}
+
 /* Потолок */
 .header {
     background: var(--basic-background);
@@ -20,12 +26,6 @@ li {
     width: 100%;
 }
 
-.menu-container {
-    display: flex;
-    margin: auto;
-    width: 940px;
-}
-
 /* Логотип */
 .logo {
     background: var(--basic-red);
@@ -33,7 +33,7 @@ li {
     width: 220px;
 }
 
-.menu-container .logo:active {
+.menu .logo:active {
     background: var(--error);
     box-shadow: 0 5px #8d1e26;
 }
@@ -138,10 +138,8 @@ li {
 /* Инфа под меню */
 .top-info {
     align-items: flex-start;
-    display: flex;
     justify-content: space-between;
-    margin: auto auto 40px;
-    width: 940px;
+    margin-bottom: 40px;
 }
 
 /* Описание */
@@ -232,10 +230,7 @@ li {
 .navigation {
     background: var(--another-blue-2);
     box-shadow: var(--shadow-down) var(--another-blue);
-    display: flex;
-    margin: auto;
     padding-left: 25px;
-    width: 940px;
 }
 
 .navigation li {
@@ -259,12 +254,10 @@ li {
 }
 
 /* Логотип, верх навигации */
-.footer-top, .footer-middle {
+.footer-top,
+.footer-middle {
     align-items: center;
-    display: flex;
     justify-content: space-between;
-    margin: auto;
-    width: 940px;
 }
 
 .footer-top .logo img {
@@ -321,11 +314,8 @@ li {
 }
 
 .footer-bottom {
-    display: flex;
     justify-content: space-between;
-    margin: auto;
     padding: 36px 0 27px;
-    width: 940px;
 }
 
 .copyright {
@@ -339,21 +329,17 @@ li {
 }
 
 .social-buttons a {
+    align-items: center;
     background: var(--another-blue-4);
-    display: inline-block;
+    display: flex;
     border-radius: 50%;
     height: 39px;
+    justify-content: center;
     width: 39px;
 }
 
 .social-buttons a:hover {
     background: var(--basic-red);
-}
-
-.social-buttons img {
-    display: block;
-    margin: auto;
-    padding-top: 9px;
 }
 
 .feedback {
