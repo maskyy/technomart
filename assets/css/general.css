@@ -37,6 +37,7 @@ a {
   --another-blue-4: #212a3a;
 
   --shadow-down: inset 0 -5px;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Тексты */

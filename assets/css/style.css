@@ -373,7 +373,8 @@ li {
 
 /* Популярные товары */
 /* Заголовок и кнопка */
-.popular-header {
+.popular-header,
+.manufacturers-header {
   align-items: center;
   background: #f9f5f0;
   display: flex;
@@ -395,6 +396,90 @@ li {
   border: 1px solid var(--another-light-grey);
   display: flex;
   flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+/* Подгон картинок */
+.item-image img {
+  display: block;
+}
+
+li:first-child .item-image {
+  margin: 5px 0 10px;
+}
+
+li:nth-child(2) .item-image {
+  margin: 28px 14px 40px 0;
+}
+
+li:nth-child(3) .item-image {
+  margin: 22px 10px 29px 0;
+}
+
+li:nth-child(4) .item-image {
+  margin: 28px 12px 40px 0;
+}
+
+.popular-items h3 {
+  margin: 0 24px;
+}
+
+/* Цены */
+.old-price,
+.price {
+  font-size: 17px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.old-price {
+  color: #a9a9a9;
+  margin-bottom: 14px;
+  margin-top: 7px;
+  text-decoration: line-through;
+}
+
+.price {
+  background: var(--basic-red);
+  border-radius: 5% 0 0 5%;
+  color: #fff;
+  margin: auto 8px 21px 0;
+  padding: 8px 0 12px 12px;
+  position: relative;
+  width: 120px;
+}
+
+.price::before {
+  background: var(--basic-red);
+  clip-path: polygon(0% -10%, 100% 50%, 0% 110%);
+  content: "";
+  height: 38px;
+  position: absolute;
+  right: -21px;
+  top: 0;
+  width: 21px;
+}
+
+/* Наведение (тень и кнопки) */
+.popular-items li:hover {
+  box-shadow: var(--card-shadow);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+}
+
+/* Производители */
+.manufacturers-header {
+  margin-top: 67px;
+}
+
+.manufacturers-header .button {
+  margin-right: 5px;
 }
 
 /* Подвал */
