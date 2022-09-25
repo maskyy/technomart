@@ -1,9 +1,11 @@
-body { width: 1200px; }
+body {
+    min-width: 1200px;
+}
 
 /* Потолок */
 
 .header {
-    background: rgba(0, 0, 0, 0.01);
+    background: var(--basic-background);
     color: #fff;
     height: 320px;
 }
@@ -24,6 +26,7 @@ body { width: 1200px; }
     width: 940px;
 }
 
+/* Логотип */
 .logo-header {
     background: var(--basic-red);
     box-shadow: var(--shadow-down) rgba(0, 0, 0, 0.24);
@@ -31,24 +34,55 @@ body { width: 1200px; }
     height: 47px;
 }
 
-.text-header {
+.logo-header:active {
+    background: var(--error);
+}
+.logo-header img {
     margin: 12px auto auto;
 }
 
-.menu-search {
-    align-items: center;
-    display: grid;
-    grid-template-columns: 20px 250px;
+/* Форма поиска */
+.search-form {
+    position: relative;
 }
 
-.menu-search-icon {
-    margin-left: 15px;
-}
-
-#search {
+.search-form input {
+    background: transparent;
+    color: #fff;
     height: 42px;
-    width: 170px;
+    padding: 0 10px 0 40px;
+    width: 270px;
 }
+
+.search-form label {
+    position: absolute;
+    top: 12px;
+    left: 17px;
+}
+
+.search-form path {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+.search-form:hover ::placeholder {
+    opacity: 1;
+}
+
+.search-form:hover path {
+    fill: #fff;
+}
+
+.search-form input:focus + label path {
+    fill: var(--basic-red);
+}
+
+.search-form input:focus {
+    background: #fff;
+    color: #000;
+    outline: none;
+}
+
+/* aa */
 .menu-bookmarks, .menu-cart {
     align-self: center;
     display: grid;
