@@ -259,3 +259,43 @@ li {
     background: var(--another-blue-2);
     height: 300px;
 }
+
+/* Логотип, верх навигации */
+.footer-top, .footer-middle {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 940px;
+}
+
+.footer-top .logo-header img {
+    margin: 20px auto 25px;
+    transform: scale(1.26);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 549px;
+}
+
+.footer-nav li {
+    padding-top: 33px;
+}
+
+/* Второй ряд (контакты и навигация) */
+.footer-contacts {
+    color: var(--basic-background);
+}
+
+.footer-nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 525px;
+}
+
+.footer-nav-bottom li {
+    color: var(--special-yellowlight);
+    padding-top: 12px;
+}
