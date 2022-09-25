@@ -49,7 +49,7 @@ li {
 .search-form input {
     background: transparent;
     color: #fff;
-    padding: 9px 10px 9px 40px;
+    padding: 9px 22px 9px 48px;
     width: 270px;
 }
 
@@ -63,7 +63,7 @@ li {
     fill: rgba(255, 255, 255, 0.3);
 }
 
-.search-form:hover ::placeholder {
+.search-form ::placeholder {
     opacity: 1;
 }
 
@@ -92,16 +92,14 @@ li {
     width: 150px;
 }
 
-.menu-list li:nth-child(1) svg {
+.menu-list li svg {
     position: absolute;
-    top: 13px;
+    top: 12px;
     left: 17px;
 }
 
-.menu-list li:nth-child(2) svg {
-    position: absolute;
-    top: 13px;
-    left: 20px;
+.menu-list li svg + a {
+    padding: 8px 0 10px 19px;
 }
 
 .menu-order {
@@ -138,70 +136,131 @@ li {
 
 /* Инфа под меню */
 .top-info {
+    align-items: flex-start;
     display: flex;
+    justify-content: space-between;
     margin: auto auto 40px;
     width: 940px;
 }
 
-.top-info-description {
+/* Описание */
+.description {
     color: var(--basic-red);
     font-size: 16px;
+    font-style: italic;
     line-height: 23px;
-    margin-left: 30px;
+    margin-left: 52px;
+    padding-top: 3px;
     width: 197px;
 }
 
-.phone {
-    align-items: center;
-    border: 3px solid #fff;
-    color: var(--basic-red);
-    display: grid;
-    grid-template-columns: 20px 250px;
-    height: 45px;
-    margin: auto;
+/* Контакты (телефон и адрес) */
+.contacts {
     width: 270px;
+}
+
+.phone {
+    border: 3px solid #fff;
+    padding: 5px 0 5px 25px;
+    position: relative;
+    text-align: center;
+}
+
+.phone img {
+    position: absolute;
+    top: 10px;
+    left: 13px;
+}
+
+.phone a {
+    color: var(--basic-red);
 }
 
 .address {
     color: var(--another-blue-2);
+    text-align: center;
+    padding-top: 3px;
 }
 
-.top-info-login {
+.authorization {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 281px;
+}
+
+.login, .register {
     background: #fff;
     color: #000;
-    grid-area: login;
-    margin: auto;
+    font-size: 21px;
+    line-height: 21px;
+    padding: 12px 0;
 }
 
-.top-info-register {
-    background: #fff;
-    color: #000;
-    margin: auto;
+.login {
+    padding-left: 24px;
+    position: relative;
+    width: 121px;
 }
 
-.header-sub-menu {
+.login svg {
+    position: absolute;
+    top: 15px;
+    left: 14px;
+}
+
+.register {
+    width: 150px;
+}
+
+.login:hover,
+.register:hover {
+    color: var(--basic-red);
+}
+
+.login:hover svg path {
+    fill: var(--basic-grey);
+}
+
+.login:active,
+.register:active {
+    color: var(--basic-greylight);
+}
+
+/* Навигация */
+.navigation {
     background: var(--another-blue-2);
     box-shadow: var(--shadow-down) var(--another-blue);
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    height: 60px;
+    display: flex;
     margin: auto;
+    padding-left: 30px;
     width: 940px;
 }
 
-.header-sub-menu-item {
-    display: block;
-    margin: auto 30px;
+.navigation li {
+    min-width: 100px;
+    padding: 16px 0 20px 0;
+    text-align: center;
 }
 
-.header-sub-menu-item:first-child {
-    margin-left: 50px;
+.navigation li:hover {
+    background: var(--another-blue);
 }
 
-.header-sub-menu-item:last-child {
+.navigation li:active {
+    background: var(--another-blue-3);
+    box-shadow: inherit;
+}
+
+/*
+.header-sub-menu li:first-child {
+    margin-left: 30px;
+}
+
+.header-sub-menu li:last-child {
     margin-right: 50px;
 }
-
+*/
 /* Подвал */
 
 .footer {
