@@ -7,24 +7,20 @@ li {
 }
 
 /* Потолок */
-
 .header {
     background: var(--basic-background);
     color: #fff;
-    height: 320px;
 }
 
 /* Меню (логотип, поиск, закладки, корзина) */
 .menu {
     background: var(--another-blue);
-    height: 42px;
     margin-bottom: 45px;
     width: 100%;
 }
 
 .menu-container {
-    display: grid;
-    grid-template-columns: 220px 270px 450px;
+    display: flex;
     margin: auto;
     width: 940px;
 }
@@ -33,14 +29,14 @@ li {
 .logo-header {
     background: var(--basic-red);
     box-shadow: var(--shadow-down) rgba(0, 0, 0, 0.24);
-    display: grid;
-    height: 47px;
+    width: 220px;
 }
 
 .logo-header:active {
     background: var(--error);
 }
 .logo-header img {
+    display: block;
     margin: 12px auto auto;
 }
 
@@ -52,8 +48,7 @@ li {
 .search-form input {
     background: transparent;
     color: #fff;
-    height: 42px;
-    padding: 0 10px 0 40px;
+    padding: 9px 10px 9px 40px;
     width: 270px;
 }
 
@@ -89,7 +84,6 @@ li {
 .menu-list {
     display: flex;
     text-align: center;
-    height: 42px;
 }
 
 .menu-list li {
@@ -111,7 +105,6 @@ li {
 
 .menu-order {
     background: var(--basic-green);
-    height: 42px;
 }
 
 .menu-order:hover {
