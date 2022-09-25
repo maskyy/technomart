@@ -366,3 +366,12 @@ li {
 .feedback p:last-child {
     margin-right: 15px;
 }
+
+.feedback a:hover {
+    text-decoration: underline;
+}
+
+.feedback a:active {
+    color: var(--basic-red);
+    text-decoration: none;
+}
