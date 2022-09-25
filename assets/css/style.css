@@ -27,17 +27,17 @@ li {
 }
 
 /* Логотип */
-.logo-header {
+.logo {
     background: var(--basic-red);
     box-shadow: 0 5px #b52933;
     width: 220px;
 }
 
-.logo-header:active {
+.menu-container .logo:active {
     background: var(--error);
     box-shadow: 0 5px #8d1e26;
 }
-.logo-header img {
+.logo img {
     display: block;
     margin: 12px auto auto;
 }
@@ -254,10 +254,8 @@ li {
 }
 
 /* Подвал */
-
 .footer {
     background: var(--another-blue-2);
-    height: 300px; /* FIXME */
 }
 
 /* Логотип, верх навигации */
@@ -269,7 +267,7 @@ li {
     width: 940px;
 }
 
-.footer-top .logo-header img {
+.footer-top .logo img {
     margin: 20px auto 25px;
     transform: scale(1.26);
 }
@@ -312,7 +310,8 @@ li {
 }
 
 
-.footer-nav-bottom li a {
+.footer-nav-bottom li a,
+.feedback a {
     color: var(--special-yellowlight);
 }
 
@@ -323,8 +322,9 @@ li {
 
 .footer-bottom {
     display: flex;
-    height: 107px; /* FIXME */
+    justify-content: space-between;
     margin: auto;
+    padding: 36px 0 27px;
     width: 940px;
 }
 
@@ -334,11 +334,35 @@ li {
 
 .social-buttons {
     display: flex;
+    gap: 5px;
+    margin-left: 48px;
 }
 
-.social-buttons li {
+.social-buttons a {
     background: var(--another-blue-4);
+    display: inline-block;
     border-radius: 50%;
-    height: 44px;
-    width: 44px;
+    height: 39px;
+    width: 39px;
+}
+
+.social-buttons a:hover {
+    background: var(--basic-red);
+}
+
+.social-buttons img {
+    display: block;
+    margin: auto;
+    padding-top: 9px;
+}
+
+.feedback {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.feedback p:last-child {
+    margin-right: 15px;
 }
