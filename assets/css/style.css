@@ -12,6 +12,20 @@ li {
   width: 940px;
 }
 
+.new {
+  position: relative;
+}
+
+.new::after {
+  background: no-repeat url("../images/new.svg");
+  content: "";
+  height: 70px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70px;
+}
+
 /* Потолок */
 .header {
   background: var(--basic-background);
@@ -298,17 +312,6 @@ li {
 
 .materials {
   background: var(--warning) no-repeat url("../images/main-icons/icon-1.svg") bottom 46% right 17%;
-  position: relative;
-}
-
-.materials::after {
-  background: no-repeat url("../images/new.svg");
-  content: "";
-  height: 70px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 70px;
 }
 
 .instruments {
@@ -380,6 +383,19 @@ li {
 }
 
 /* Товары (карточки) */
+.popular-items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+}
+
+.popular-items li {
+  align-items: center;
+  border: 1px solid var(--another-light-grey);
+  display: flex;
+  flex-direction: column;
+}
 
 /* Подвал */
 .footer {
