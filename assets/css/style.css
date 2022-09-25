@@ -482,6 +482,29 @@ li:nth-child(4) .item-image {
   margin-right: 5px;
 }
 
+.manufacturers {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+}
+
+.manufacturers li a {
+  align-items: center;
+  border: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  min-height: 145px;
+  min-width: 220px;
+}
+
+.manufacturers li a:hover {
+  box-shadow: var(--card-shadow);
+}
+
+.manufacturers li a:active {
+  opacity: 0.5;
+}
 /* Подвал */
 .footer {
   background: var(--another-blue-2);
