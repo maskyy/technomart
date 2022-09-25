@@ -28,12 +28,13 @@ li {
 /* Логотип */
 .logo-header {
     background: var(--basic-red);
-    box-shadow: var(--shadow-down) rgba(0, 0, 0, 0.24);
+    box-shadow: 0 5px #b52933;
     width: 220px;
 }
 
 .logo-header:active {
     background: var(--error);
+    box-shadow: 0 5px #8d1e26;
 }
 .logo-header img {
     display: block;
@@ -137,36 +138,32 @@ li {
 
 /* Инфа под меню */
 .top-info {
-    display: grid;
-    grid-template-areas: "description phone login register"
-                         "description address login register";
+    display: flex;
     margin: auto auto 40px;
-    width: 910px;
+    width: 940px;
 }
 
 .top-info-description {
     color: var(--basic-red);
     font-size: 16px;
-    grid-area: description;
     line-height: 23px;
-    width: 200px;
+    margin-left: 30px;
+    width: 197px;
 }
 
-.top-info-phone {
+.phone {
     align-items: center;
     border: 3px solid #fff;
     color: var(--basic-red);
     display: grid;
-    grid-area: phone;
     grid-template-columns: 20px 250px;
     height: 45px;
     margin: auto;
     width: 270px;
 }
 
-.top-info-address {
+.address {
     color: var(--another-blue-2);
-    grid-area: address;
 }
 
 .top-info-login {
@@ -179,7 +176,6 @@ li {
 .top-info-register {
     background: #fff;
     color: #000;
-    grid-area: register;
     margin: auto;
 }
 
