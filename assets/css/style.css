@@ -288,8 +288,7 @@ li {
 }
 
 /* Простые блоки (материалы - доставка) */
-.promo div:not(.perforators, .perforators-shadow) {
-  background-repeat: no-repeat;
+.promo-item {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -298,7 +297,7 @@ li {
 }
 
 .materials {
-  background: var(--warning) url("../images/main-icons/icon-1.svg") bottom 46% right 17%;
+  background: var(--warning) no-repeat url("../images/main-icons/icon-1.svg") bottom 46% right 17%;
   position: relative;
 }
 
@@ -313,19 +312,19 @@ li {
 }
 
 .instruments {
-  background: var(--special-blue) url("../images/main-icons/icon-2.svg") bottom 45% right 14%;
+  background: var(--special-blue) no-repeat url("../images/main-icons/icon-2.svg") bottom 45% right 14%;
 }
 
 .technics {
-  background: var(--special-lilac) url("../images/main-icons/icon-3.svg") bottom 49% right 14%;
+  background: var(--special-lilac) no-repeat url("../images/main-icons/icon-3.svg") bottom 49% right 14%;
 }
 
 .discounts {
-  background: var(--special-greenlight) url("../images/main-icons/icon-4.svg") bottom 50% right 19%;
+  background: var(--special-greenlight) no-repeat url("../images/main-icons/icon-4.svg") bottom 50% right 19%;
 }
 
 .delivery {
-  background: var(--warning) url("../images/main-icons/icon-5.svg") bottom 48% right 14%;
+  background: var(--warning) no-repeat url("../images/main-icons/icon-5.svg") bottom 48% right 14%;
 }
 
 /* Перфораторы, дрели */
