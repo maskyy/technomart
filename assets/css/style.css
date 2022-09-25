@@ -50,7 +50,7 @@ li {
 .search-form input {
   background: transparent;
   color: #fff;
-  padding: 9px 22px 9px 48px;
+  padding: 9px 22px 9px 41px;
   width: 270px;
 }
 
@@ -93,10 +93,16 @@ li {
   width: 150px;
 }
 
-.menu-list li svg {
+.menu-list li:first-child svg {
   position: absolute;
   top: 12px;
-  left: 17px;
+  left: 20px;
+}
+
+.menu-list li:nth-child(2) svg {
+  position: absolute;
+  top: 12px;
+  left: 25px;
 }
 
 .menu-list li svg+a {
@@ -149,9 +155,8 @@ li {
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
-  margin-left: 52px;
-  padding-top: 3px;
-  width: 197px;
+  margin-left: 30px;
+  margin-right: 22px;
 }
 
 /* Контакты (телефон и адрес) */
@@ -168,8 +173,8 @@ li {
 
 .phone img {
   position: absolute;
-  top: 10px;
-  left: 13px;
+  top: 11px;
+  left: 38px;
 }
 
 .phone a {
@@ -199,7 +204,7 @@ li {
 }
 
 .login {
-  padding-left: 24px;
+  padding-left: 18px;
   position: relative;
   width: 121px;
 }
@@ -207,7 +212,7 @@ li {
 .login svg {
   position: absolute;
   top: 15px;
-  left: 14px;
+  left: 18px;
 }
 
 .register {
@@ -235,17 +240,16 @@ li {
   padding-left: 25px;
 }
 
-.navigation li {
-  min-width: 100px;
-  padding: 16px 31px 20px 26px;
-  text-align: center;
+.navigation a {
+  display: block;
+  padding: 16px 30px 20px 27.5px;
 }
 
-.navigation li:hover {
+.navigation a:hover {
   background: var(--another-blue);
 }
 
-.navigation li:active {
+.navigation a:active {
   background: var(--another-blue-3);
   box-shadow: inherit;
 }
@@ -253,7 +257,7 @@ li {
 /* Основа */
 .main {
   /* FIXME */
-  height: 2531px;
+  height: 2471px;
 }
 
 /* Промо (материалы - доставка) */
@@ -265,51 +269,118 @@ li {
   margin-top: 59px;
 }
 
-.promo h3 {
-  margin-left: 23px;
-  margin-top: 20px;
-  margin-bottom: 13px;
+/* Отступы, прозрачные кнопки */
+.transparent-button {
+  background: rgba(255, 255, 255, 0.3);
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 135px;
 }
 
-.promo div div {
-  margin-left: 24px;
-  margin-bottom: 22px;
+.transparent-button:hover {
+  background: rgba(197, 197, 197, 0.3);
 }
 
-.materials,
-.delivery {
-  background: var(--warning) no-repeat url("../images/main-icons/icon-1.svg") bottom 49% right 16%;
+.transparent-button:active {
+  background: rgb(169, 169, 169, 0.3);
+}
+
+/* Простые блоки (материалы - доставка) */
+.promo div:not(.perforators, .perforators-shadow) {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: space-between;
+  padding: 21px 0 20px 23px;
+}
+
+.materials {
+  background: var(--warning) url("../images/main-icons/icon-1.svg") bottom 46% right 17%;
+  position: relative;
 }
 
 .materials::after {
+  background: no-repeat url("../images/new.svg");
   content: "";
+  height: 70px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70px;
 }
 
 .instruments {
-  background: var(--special-blue);
+  background: var(--special-blue) url("../images/main-icons/icon-2.svg") bottom 45% right 14%;
 }
 
 .technics {
-  background: var(--special-lilac);
+  background: var(--special-lilac) url("../images/main-icons/icon-3.svg") bottom 49% right 14%;
 }
 
+.discounts {
+  background: var(--special-greenlight) url("../images/main-icons/icon-4.svg") bottom 50% right 19%;
+}
+
+.delivery {
+  background: var(--warning) url("../images/main-icons/icon-5.svg") bottom 48% right 14%;
+}
+
+/* Перфораторы, дрели */
 .perforators {
   background: url("../images/man-bosch.png");
   grid-column: span 2;
   grid-row: span 2;
 }
 
-.discounts {
-  background: var(--special-greenlight);
+.perforators-shadow {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 15px 0;
 }
 
-.transparent-button {
-  background: rgba(255, 255, 255, 0.3);
+.perforators h2 {
+  margin: 8px 0 6px 24px;
+}
+
+.perforators p {
+  margin-left: 24px;
+}
+
+.perforators a {
+  margin: 96px 0 0 24px;
+}
+
+.button {
+  background: var(--basic-red);
+  display: block;
   padding: 10px 0;
   text-align: center;
   text-transform: uppercase;
-  width: 135px;
+  width: 192px;
 }
+
+.button:hover {
+  background: var(--basic-red-2);
+}
+
+.button:active {
+  background: var(--error);
+}
+
+/* Популярные товары */
+/* Заголовок и кнопка */
+.popular-header {
+  align-items: center;
+  background: #f9f5f0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 59px;
+  padding: 26px 14px 25px 28px;
+}
+
+/* Товары (карточки) */
 
 /* Подвал */
 .footer {
