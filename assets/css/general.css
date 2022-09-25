@@ -9,7 +9,12 @@
     padding: 0;
 }
 
-/* Цвета */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Переменные */
 :root {
     --basic-red: #ee3643;
     --basic-green: #63a63e;
@@ -26,6 +31,9 @@
     --error: #ba2732;
     --another-light-grey: #eaeaea;
     --another-blue: #293449;
+    --another-blue-2: #32425c;
+
+    --shadow-down: inset 0 -5px;
 }
 
 /* Тексты */
@@ -94,4 +102,8 @@
 .caption {
     font-size: 14px;
     line-height: 24px;
+}
+
+.margin-auto {
+    margin: auto;
 }

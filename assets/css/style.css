@@ -1,38 +1,109 @@
+/* Потолок */
+
 .header {
     background: rgba(0, 0, 0, 0.01);
+    color: #fff;
     height: 320px;
 }
 
 .menu {
-    background: #293449;
+    background: var(--another-blue);
+    display: flex;
     width: 100%;
     height: 42px;
 }
 
 .logo-header {
-    background-image: url("../images/logo-header.png");
+    background: var(--basic-red);
+    box-shadow: var(--shadow-down) rgba(0, 0, 0, 0.24);
+    display: flex;
     height: 47px;
-    vertical-align: middle;
     width: 220px;
 }
 
-.logo-header img {
-    display: block;
+.text-header {
+    margin: 12px auto auto;
+}
+
+.menu-search {
+    display: flex;
+}
+
+.menu-search-icon {
     margin: auto;
+}
+
+.menu-bookmarks, .menu-cart {
+    align-self: center;
+    display: flex;
+    width: 110px;
+}
+
+.menu-create-order {
+    width: 150px;
 }
 
 .top-info {
     display: grid;
     grid-template-areas: "description phone login register"
                          "description address login register";
+    margin: auto;
+    width: 910px;
 }
 
-.top-info-description
-{
+.top-info-description {
+    color: var(--basic-red);
+    font-size: 16px;
     grid-area: description;
+    line-height: 23px;
+    width: 200px;
 }
 
-.top-info-phone { grid-area: phone; }
-.top-info-address { grid-area: address; }
-.top-info-login { grid-area: login; }
-.top-info-register { grid-area: register; }
+.top-info-phone {
+    border: 3px solid #fff;
+    color: var(--basic-red);
+    display: flex;
+    grid-area: phone;
+    height: 45px;
+    width: 270px;
+}
+
+.top-info-address {
+    color: var(--another-blue-2);
+    grid-area: address;
+}
+
+.top-info-login {
+    background: #fff;
+    color: #000;
+    grid-area: login;
+    margin: auto;
+}
+.top-info-register {
+    background: #fff;
+    color: #000;
+    grid-area: register;
+    margin: auto;
+}
+
+.header-sub-menu {
+    background: var(--another-blue-2);
+    box-shadow: var(--shadow-down) var(--another-blue);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 60px;
+    margin: auto;
+    width: 940px;
+}
+
+.header-sub-menu-item {
+    display: block;
+    margin: auto;
+}
+
+/* Подвал */
+
+.footer {
+    background: var(--another-blue-2);
+    height: 300px;
+}
