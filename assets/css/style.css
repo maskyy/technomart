@@ -257,7 +257,7 @@ li {
 
 .footer {
     background: var(--another-blue-2);
-    height: 300px;
+    height: 300px; /* FIXME */
 }
 
 /* Логотип, верх навигации */
@@ -281,10 +281,26 @@ li {
 }
 
 .footer-nav li {
-    padding-top: 33px;
+    margin-top: 33px;
+}
+
+.footer-nav li a:hover,
+.footer-nav-bottom li a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav li a:active,
+.footer-nav-bottom li a:active {
+    opacity: 0.5;
+    text-decoration: none;
 }
 
 /* Второй ряд (контакты и навигация) */
+.footer-middle {
+    align-items: flex-start;
+    margin: 32px auto 50px;
+}
+
 .footer-contacts {
     color: var(--basic-background);
 }
@@ -295,7 +311,34 @@ li {
     width: 525px;
 }
 
-.footer-nav-bottom li {
+
+.footer-nav-bottom li a {
     color: var(--special-yellowlight);
-    padding-top: 12px;
+}
+
+/* Третий ряд (копирайт, соцсети, автор) */
+.footer-dark {
+    background: var(--another-blue);
+}
+
+.footer-bottom {
+    display: flex;
+    height: 107px; /* FIXME */
+    margin: auto;
+    width: 940px;
+}
+
+.copyright {
+    color: #fff;
+}
+
+.social-buttons {
+    display: flex;
+}
+
+.social-buttons li {
+    background: var(--another-blue-4);
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
 }
