@@ -10,6 +10,7 @@ li {
 .header {
     background: var(--basic-background);
     color: #fff;
+    padding-bottom: 60px;
 }
 
 /* Меню (логотип, поиск, закладки, корзина) */
@@ -233,13 +234,13 @@ li {
     box-shadow: var(--shadow-down) var(--another-blue);
     display: flex;
     margin: auto;
-    padding-left: 30px;
+    padding-left: 25px;
     width: 940px;
 }
 
 .navigation li {
     min-width: 100px;
-    padding: 16px 0 20px 0;
+    padding: 16px 31px 20px 26px;
     text-align: center;
 }
 
@@ -252,15 +253,6 @@ li {
     box-shadow: inherit;
 }
 
-/*
-.header-sub-menu li:first-child {
-    margin-left: 30px;
-}
-
-.header-sub-menu li:last-child {
-    margin-right: 50px;
-}
-*/
 /* Подвал */
 
 .footer {
