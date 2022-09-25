@@ -2,6 +2,10 @@ body {
     min-width: 1200px;
 }
 
+li {
+    list-style: none;
+}
+
 /* Потолок */
 
 .header {
@@ -10,8 +14,7 @@ body {
     height: 320px;
 }
 
-/* Меню (поиск, закладки, корзина) */
-
+/* Меню (логотип, поиск, закладки, корзина) */
 .menu {
     background: var(--another-blue);
     height: 42px;
@@ -21,7 +24,7 @@ body {
 
 .menu-container {
     display: grid;
-    grid-template-columns: 220px 270px 150px 150px 150px;
+    grid-template-columns: 220px 270px 450px;
     margin: auto;
     width: 940px;
 }
@@ -82,21 +85,64 @@ body {
     outline: none;
 }
 
-/* aa */
-.menu-bookmarks, .menu-cart {
-    align-self: center;
-    display: grid;
-    grid-template-columns: 20px 130px;
-}
-
-.menu-create-order {
-    background: var(--basic-green);
-    display: grid;
+/* Закладки, корзина, оформить */
+.menu-list {
+    display: flex;
+    text-align: center;
     height: 42px;
 }
 
-/* Инфа под меню */
+.menu-list li {
+    position: relative;
+    width: 150px;
+}
 
+.menu-list li:nth-child(1) svg {
+    position: absolute;
+    top: 13px;
+    left: 17px;
+}
+
+.menu-list li:nth-child(2) svg {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+}
+
+.menu-order {
+    background: var(--basic-green);
+    height: 42px;
+}
+
+.menu-order:hover {
+    background: var(--success);
+}
+
+.menu-order:active {
+    background: var(--basic-green);
+}
+.menu-list li a {
+    display: block;
+    padding: 9px 0;
+}
+
+.menu-list li:active {
+    background: var(--another-blue-3);
+}
+
+.menu-list path {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+.menu-list li:hover path {
+    fill: #fff;
+}
+
+.menu-list li:active path {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+/* Инфа под меню */
 .top-info {
     display: grid;
     grid-template-areas: "description phone login register"
