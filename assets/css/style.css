@@ -426,6 +426,7 @@ li {
 .slides-arrows label {
   border: 3px #fff;
   border-style: none none solid solid;
+  cursor: pointer;
   display: block;
   height: 28px;
   transform: rotate(45deg);
