@@ -310,47 +310,134 @@ li {
 }
 
 .materials {
-  background: var(--warning) no-repeat url("../images/main-icons/icon-1.svg") bottom 46% right 17%;
+  background: var(--warning) no-repeat url("../images/promo/icon-1.svg") bottom 46% right 17%;
 }
 
 .instruments {
-  background: var(--special-blue) no-repeat url("../images/main-icons/icon-2.svg") bottom 45% right 14%;
+  background: var(--special-blue) no-repeat url("../images/promo/icon-2.svg") bottom 45% right 14%;
 }
 
 .technics {
-  background: var(--special-lilac) no-repeat url("../images/main-icons/icon-3.svg") bottom 49% right 14%;
+  background: var(--special-lilac) no-repeat url("../images/promo/icon-3.svg") bottom 49% right 14%;
 }
 
 .discounts {
-  background: var(--special-greenlight) no-repeat url("../images/main-icons/icon-4.svg") bottom 50% right 19%;
+  background: var(--special-greenlight) no-repeat url("../images/promo/icon-4.svg") bottom 50% right 19%;
 }
 
 .delivery {
-  background: var(--warning) no-repeat url("../images/main-icons/icon-5.svg") bottom 48% right 14%;
+  background: var(--warning) no-repeat url("../images/promo/icon-5.svg") bottom 48% right 14%;
 }
 
-/* Перфораторы, дрели */
-.perforators {
-  background: url("../images/popular-items/man-bosch.png");
+/* Слайдер (перфораторы, дрели) */
+.promo-slider {
   grid-column: span 2;
   grid-row: span 2;
+  overflow: hidden;
+  position: relative;
 }
 
-.perforators-shadow {
+.promo-slider input[type="radio"] {
+  display: none;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.8s ease;
+  width: 200%;
+}
+
+.promo-slide {
+  width: 620px;
+}
+
+.perforators {
+  background: url("../images/promo/perforators.png");
+}
+
+.drills {
+  background: url("../images/promo/drills.png");
+}
+
+.slide-shadow {
   background: rgba(0, 0, 0, 0.25);
   padding: 15px 0;
 }
 
-.perforators h2 {
+.promo-slide h2 {
   margin: 8px 0 6px 24px;
 }
 
-.perforators p {
+.promo-slide p {
   margin-left: 24px;
 }
 
-.perforators a {
-  margin: 96px 0 0 24px;
+.promo-slide a {
+  margin: 96px 0 28px 24px;
+}
+
+#promo-1:checked ~ .slides-container {
+  transform: translate(0);
+}
+
+#promo-2:checked ~ .slides-container {
+  transform: translate(-620px);
+}
+
+.horizontally-centered {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+}
+
+.slides-radio {
+  bottom: 36px;
+  display: flex;
+  gap: 10px;
+}
+
+.slides-radio label {
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  width: 10px;
+}
+
+#promo-1:checked ~ .slides-radio label:first-child::before,
+#promo-2:checked ~ .slides-radio label:nth-child(2)::before {
+  background: var(--basic-red);
+  border-radius: 50%;
+  display: block;
+  content: "";
+  height: 6px;
+  margin: 2px auto;
+  width: 6px;
+}
+
+.slides-arrows {
+  top: 48%;
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+}
+
+.slides-arrows label {
+  border: 3px #fff;
+  border-style: none none solid solid;
+  display: block;
+  height: 28px;
+  transform: rotate(45deg);
+  width: 28px;
+}
+
+.slides-arrows label:first-child {
+  margin-left: 6px;
+}
+
+.slides-arrows label:last-child {
+  transform: rotate(-135deg);
 }
 
 .button {
