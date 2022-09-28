@@ -814,6 +814,7 @@ li:nth-child(4) .item-image {
 
 .main-contacts img {
   margin: 34px 0 22px;
+  min-width: 100%;
 }
 
 .main-contacts .button {
