@@ -1,7 +1,3 @@
-body {
-  min-width: 1200px;
-}
-
 li {
   list-style: none;
 }
@@ -9,7 +5,7 @@ li {
 .container {
   display: flex;
   margin: auto;
-  width: 940px;
+  width: 58.75rem;
 }
 
 .new {
@@ -43,7 +39,7 @@ li {
 .logo {
   background: var(--basic-red);
   box-shadow: 0 5px #b52933;
-  width: 220px;
+  width: 13.75rem;
 }
 
 .menu .logo:active {
@@ -104,7 +100,7 @@ li {
 
 .menu-list li {
   position: relative;
-  width: 150px;
+  width: 9.375rem;
 }
 
 .menu-list li:first-child svg {
@@ -166,7 +162,7 @@ li {
 /* Описание */
 .description {
   color: var(--basic-red);
-  font-size: 16px;
+  font-size: 1rem;
   font-style: italic;
   line-height: 23px;
   margin-left: 30px;
@@ -175,7 +171,7 @@ li {
 
 /* Контакты (телефон и адрес) */
 .contacts {
-  width: 270px;
+  width: 16.875rem;
 }
 
 .phone {
@@ -205,22 +201,21 @@ li {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  width: 281px;
+  width: 17.5rem;
 }
 
 .login,
 .register {
   background: #fff;
   color: #000;
-  font-size: 21px;
-  line-height: 21px;
+  font-size: 1.3125rem;
   padding: 12px 0;
 }
 
 .login {
   padding-left: 18px;
   position: relative;
-  width: 121px;
+  width: 7.5rem;
 }
 
 .login svg {
@@ -230,7 +225,7 @@ li {
 }
 
 .register {
-  width: 150px;
+  width: 9.375rem;
 }
 
 .login:hover,
@@ -251,12 +246,12 @@ li {
 .navigation {
   background: var(--another-blue-2);
   box-shadow: var(--shadow-down) var(--another-blue);
-  padding-left: 25px;
+  padding-left: 1.5625rem;
 }
 
 .navigation a {
   display: block;
-  padding: 16px 30px 20px 27.5px;
+  padding: 1rem 1.875rem 1.25rem 1.72rem;
 }
 
 .navigation a:hover {
@@ -288,7 +283,7 @@ li {
   display: block;
   padding: 10px 0;
   text-align: center;
-  width: 135px;
+  width: 8.5rem;
 }
 
 .transparent-button:hover {
@@ -347,7 +342,7 @@ li {
 }
 
 .promo-slide {
-  width: 620px;
+  width: 38.75rem;
 }
 
 .perforators {
@@ -380,7 +375,7 @@ li {
 }
 
 #promo-2:checked ~ .slides-container {
-  transform: translate(-620px);
+  transform: translate(-38.75rem);
 }
 
 .horizontally-centered {
@@ -419,7 +414,7 @@ li {
   top: 48%;
   display: flex;
   justify-content: space-between;
-  width: 570px;
+  width: 35.625rem;
 }
 
 .slides-arrows label {
@@ -445,7 +440,7 @@ li {
   display: block;
   padding: 10px 0;
   text-align: center;
-  width: 192px;
+  width: 12rem;
 }
 
 .button:hover {
@@ -513,7 +508,7 @@ li:nth-child(4) .item-image {
 /* Цены */
 .old-price,
 .price {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
   line-height: 18px;
@@ -534,7 +529,7 @@ li:nth-child(4) .item-image {
   margin: auto 8px 21px 0;
   padding: 8px 0 12px 12px;
   position: relative;
-  width: 120px;
+  width: 7.5rem;
 }
 
 .price::before {
@@ -571,7 +566,7 @@ li:nth-child(4) .item-image {
   border-radius: 2px;
   display: block;
   padding: 10px 0;
-  width: 135px;
+  width: 8.5rem;
 }
 
 .buy-button {
@@ -682,7 +677,7 @@ li:nth-child(4) .item-image {
 
 .services-controls {
   position: relative;
-  width: 240px;
+  width: 15rem;
 }
 
 .services-controls::before {
@@ -700,7 +695,7 @@ li:nth-child(4) .item-image {
   box-shadow: inset 0 1px #405069, inset 0 -1px var(--another-blue);
   color: #fff;
   cursor: pointer;
-  font-size: 21px;
+  font-size: 1.3125rem;
   display: block;
   padding: 16px 22px 17px;
 }
@@ -724,7 +719,7 @@ li:nth-child(4) .item-image {
 }
 
 .services-list {
-  width: 620px;
+  width: 38.75rem;
 }
 
 .services-list li {
@@ -746,7 +741,7 @@ li:nth-child(4) .item-image {
   margin-top: 26px;
   padding: 10px 0;
   text-align: center;
-  width: 195px;
+  width: 12.25rem;
 }
 
 .services-list li::before {
@@ -810,11 +805,11 @@ li:nth-child(4) .item-image {
 }
 
 .company .button {
-  width: 220px;
+  width: 13.75rem;
 }
 
 .main-contacts {
-  width: 300px;
+  width: 18.75rem;
 }
 
 .main-contacts img {
@@ -838,14 +833,14 @@ li:nth-child(4) .item-image {
 }
 
 .footer-top .logo img {
-  margin: 20px auto 25px;
+  margin: 1.25rem auto 1.5rem;
   transform: scale(1.26);
 }
 
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  width: 549px;
+  width: 34.25rem;
 }
 
 .footer-nav li {
@@ -878,7 +873,7 @@ li:nth-child(4) .item-image {
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
-  width: 525px;
+  width: 32.875rem;
 }
 
 .footer-nav-bottom li a,
@@ -924,7 +919,7 @@ li:nth-child(4) .item-image {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 18.75rem;
 }
 
 .feedback p:last-child {

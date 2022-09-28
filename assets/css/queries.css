@@ -1,0 +1,29 @@
+/* <= 944px (59 * 16) */
+@media (max-width: 59em) {
+  html {
+    font-size: 80%;
+  }
+
+  .popular-items,
+  .manufacturers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo img {
+    transform: scale(0.75);
+  }
+
+  .footer-top .logo img {
+    transform: scale(1);
+  }
+}
+
+/* <= 768px (48 * 16) */
+@media (max-width: 48em) {
+
+}
+
+/* <= 544px */
+@media (max-width: 34em) {
+
+}
