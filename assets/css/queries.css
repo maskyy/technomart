@@ -20,10 +20,59 @@
 
 /* <= 768px (48 * 16) */
 @media (max-width: 48em) {
+  html {
+    font-size: 85%;
+  }
 
+  .container {
+    width: 45rem;
+  }
+
+  .menu > .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .authorization {
+    width: 16rem;
+  }
+
+  .login {
+    width: 7rem;
+  }
+
+  .register {
+    width: 8rem;
+  }
+
+  .navigation {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 35rem;
+  }
+
+  .nav-break {
+    flex-basis: 100%;
+  }
+
+  .promo {
+    grid-template-columns: repeat(2, 1fr);
+    width: 38.75rem;
+  }
+
+  .services-controls {
+    margin-right: 1rem;
+    width: 10rem;
+  }
+
+  .services-list > li * {
+    position: relative;
+  }
 }
 
-/* <= 544px */
-@media (max-width: 34em) {
-
+/* <= 624px */
+@media (max-width: 39em) {
+  html {
+    font-size: 80%;
+  }
 }
