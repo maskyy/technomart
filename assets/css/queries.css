@@ -80,7 +80,29 @@
   }
 
   .container {
+    flex-wrap: wrap;
+    justify-content: center;
     width: 95%;
+  }
+
+  .menu > .container {
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu .logo {
+    padding-bottom: 1rem;
+  }
+
+  .menu-list {
+    flex-direction: column;
+  }
+
+  .navigation {
+    align-items: center;
+    flex-direction: column;
+    width: 15rem;
   }
 
   .phone {
@@ -96,9 +118,14 @@
     justify-content: center;
   }
 
+  .promo-item {
+    align-items: center;
+    background-image: none;
+    padding-left: 0;
+  }
+
   .promo-slider {
-    grid-column: span 1;
-    grid-row: span 1;
+    display: none;
   }
 
   .popular-items,
@@ -119,11 +146,18 @@
     align-items: center;
   }
 
+  .services-controls {
+    display: none;
+  }
+
   .services-slider {
     justify-content: center;
   }
 
   .services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     width: 21rem;
   }
 
@@ -131,10 +165,18 @@
     display: none;
   }
 
+  .services-list li {
+    display: block;
+  }
+
   .about {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+  }
+
+  .company p.paragraph-1 {
+    width: 100%;
   }
 
   .footer-nav,
